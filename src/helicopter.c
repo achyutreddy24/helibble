@@ -22,6 +22,8 @@ char best_score_str[20];
 
 #define REFRESH_RATE 50
 #define MIN_HEIGHT 70
+	
+#define PERSIST_SCORE 0
 
 int c = 1;
 
@@ -244,10 +246,15 @@ static void init(void) {
   window_set_fullscreen(window, true);
   window_stack_push(window, animated);
   light_enable(true);
+	if (persist_exists(PERSIST_SCORE)) {
+    // Load stored count
+    best_score = persist_read_int(PERSIST_SCORE);
+  }
 }
 
 static void deinit(void) {
   window_destroy(window);
+	persist_write_int(PERSIST_SCORE, best_score);
 }
 
 int main(void) {

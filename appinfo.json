@@ -1,28 +1,32 @@
 {
-  "uuid": "d0c1bba9-48cc-4edc-8a58-54eeed7575f5",
-  "shortName": "Helibble",
-  "longName": "Helibble",
-  "companyName": "MakeAwesomeHappen",
-  "versionCode": 1,
-  "versionLabel": "1.0.0",
-  "watchapp": {
-    "watchface": false
-  },
-  "appKeys": {
-    "dummy": 0
-  },
-  "resources": {
-    "media": [
-    {
-      "type": "png",
-      "name": "IMAGE_HELI",
-      "file": "helicopter.png"
+    "appKeys": {
+        "dummy": 0
     },
-    {
-      "type": "png",
-      "name": "IMAGE_HELI_TILT",
-      "file": "helicopter_tilt.png"
+    "capabilities": [
+        ""
+    ],
+    "companyName": "MakeAwesomeHappen",
+    "longName": "Helibble",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/helicopter_tilt.png",
+                "name": "IMAGE_HELI_TILT",
+                "type": "png"
+            },
+            {
+                "file": "images/helicopter.png",
+                "name": "IMAGE_HELI",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "Helibble",
+    "uuid": "d0c1bba9-48cc-4edc-8a58-54eeed7575f5",
+    "versionCode": 1,
+    "versionLabel": "1.1",
+    "watchapp": {
+        "watchface": false
     }
-      ]
-  }
 }
